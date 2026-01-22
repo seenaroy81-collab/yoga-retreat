@@ -15,7 +15,7 @@ const Services = () => {
                 "Tea/water setup",
             ],
             bestFor: "Experienced yoga teachers or schools with their own travel/accommodation plans.",
-            img: "/images/yoga5.jpg",
+            img: "/images/optimized/yoga5.webp",
             color: "var(--primary-color)",
         },
         {
@@ -29,7 +29,7 @@ const Services = () => {
                 "Wi-Fi & housekeeping",
             ],
             bestFor: "Yoga teachers who want a ready-made retreat experience without managing logistics.",
-            img: "/images/room3.jpg",
+            img: "/images/optimized/room3.webp",
             color: "#5c8a54",
         },
         {
@@ -43,7 +43,7 @@ const Services = () => {
                 "Optional Panchakarma add-ons",
             ],
             bestFor: "Yoga teachers offering holistic “Yoga + Ayurveda” retreats.",
-            img: "/images/ayurvedic.jpg",
+            img: "/images/optimized/ayurvedic.webp",
             color: "#3d6638",
         },
     ];

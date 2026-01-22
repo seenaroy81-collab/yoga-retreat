@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-grid">
                     <div className="footer-info">
-                        <img src="/images/logo_chamundi.jpeg" alt="Chamundi Yoga" className="footer-logo" />
+                        <img src="/images/optimized/logo_chamundi.jpeg" alt="Chamundi Yoga" className="footer-logo" />
                         <p>Peaceful sanctuary for yoga, meditation, and wellness in the heart of Kerala.</p>
                         <div className="social-links">
                             <a href="#" aria-label="Instagram"><Instagram size={20} /></a>

@@ -15,7 +15,7 @@ const Studios = () => {
                 "Equipped with mats, blocks, bolsters, and sound system",
                 "Ideal for group sessions, workshops, and teacher trainings",
             ],
-            img: "/images/studio.jpg",
+            img: "/images/optimized/studio.webp",
         },
         {
             id: 2,
@@ -26,7 +26,7 @@ const Studios = () => {
                 "Perfect for private sessions or small groups",
                 "Equipped with essential yoga props",
             ],
-            img: "/images/yoga2.jpg",
+            img: "/images/optimized/yoga2.webp",
         },
     ];
 
