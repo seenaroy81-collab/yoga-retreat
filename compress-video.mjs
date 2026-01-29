@@ -6,23 +6,24 @@ import path from 'node:path';
 ffmpeg.setFfmpegPath(ffmpegPath);
 
 // Define paths (path.resolve works relative to where you run the command)
-const inputFile = path.resolve('public/images/002 Aerial.mp4');
-const outputFile = path.resolve('public/images/002_Aerial_optimized.mp4');
+const inputFile = path.resolve('public/Aerial.mp4');
+const outputFile = path.resolve('public/Aerial_optimized.webm');
 
-console.log(`🎬 Compressing video...`);
+console.log(`🎬 Compressing video to WebM...`);
 console.log(`   Input: ${inputFile}`);
 
 ffmpeg(inputFile)
-  .noAudio() 
-  .size('1920x?') 
-  .videoCodec('libx264')
+  .noAudio()
+  .size('1920x?')
+  .videoCodec('libvpx-vp9')
   .outputOptions([
-    '-crf 28',             
-    '-preset slow',         
-    '-movflags +faststart'  
+    '-crf 55',
+    '-b:v 0',
+    '-deadline good',
+    '-cpu-used 2'
   ])
   .on('end', () => {
-    console.log(`✅ Success! Created: 002_Aerial_optimized.mp4`);
+    console.log(`✅ Success! Created: Aerial_optimized.webm`);
   })
   .on('error', (err) => {
     console.error('❌ Error occurred:', err);
