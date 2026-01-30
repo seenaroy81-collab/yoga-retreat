@@ -7,7 +7,7 @@ const OFFERINGS = [
   {
     title: "Equipped Studios",
     desc: "Professional spaces with all yoga props and sound systems.",
-    img: "/images/optimized/studio2.webp",
+    img: "/images/optimized/yoga-props.webp",
   },
   {
     title: "Peaceful Environment",
@@ -64,7 +64,6 @@ const Home = () => {
             className="hero-video"
           >
             <source src="/Aerial_optimized.webm" type="video/webm" />
-            <source src="/Aerial_optimized.mp4" type="video/mp4" />
           </video>
         </div>
 

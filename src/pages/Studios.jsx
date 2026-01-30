@@ -17,17 +17,6 @@ const Studios = () => {
             ],
             img: "/images/optimized/studio.webp",
         },
-        {
-            id: 2,
-            name: "Studio 2 – Private Studio",
-            capacity: "5–10 people",
-            features: [
-                "Cozy, calm atmosphere",
-                "Perfect for private sessions or small groups",
-                "Equipped with essential yoga props",
-            ],
-            img: "/images/optimized/yoga2.webp",
-        },
     ];
 
     const amenities = [
@@ -72,7 +61,7 @@ const Studios = () => {
                                         <li key={i}>{f}</li>
                                     ))}
                                 </ul>
-                                <Link to="/booking" className="btn btn-primary">Book This Space</Link>
+                                {studio.id !== 2 && <Link to="/booking" className="btn btn-primary">Book This Space</Link>}
                             </div>
                         </motion.div>
                     ))}
