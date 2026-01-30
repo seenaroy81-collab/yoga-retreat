@@ -63,8 +63,8 @@ const Home = () => {
             preload="metadata"
             className="hero-video"
           >
-            <source src="/Aerial_optimized.webm" type="video/webm" />
             <source src="/Aerial_optimized.mp4" type="video/mp4" />
+            <source src="/Aerial_optimized.webm" type="video/webm" />
           </video>
         </div>
 
